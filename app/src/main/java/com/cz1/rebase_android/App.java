@@ -21,9 +21,8 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-        mAppComponent = DaggerAppComponent.builder().appModule(new AppModule(this)).build();
-
         sContext = this;
+        mAppComponent = DaggerAppComponent.builder().appModule(new AppModule(this)).build();
 
     }
 
